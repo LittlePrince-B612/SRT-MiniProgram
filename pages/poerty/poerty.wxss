@@ -1,0 +1,58 @@
+page {
+  height: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Left */
+.container .left {
+  flex: 2;
+  width: 25%;
+  font-size: 30rpx;
+  background-color: #f4f4f4;
+  /* text-align: center:	可以让文本居中对齐 */
+  text-align: center;
+  height: 90rpx;
+  /* line-height属性定义行与行之间的距离 */
+  line-height: 110rpx;
+}
+/* 设置左边导航栏中文字的样式 */
+.title_item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 左侧朝代选项栏选中时的效果 */
+.active{
+  background-color: #fff;
+  border-left: 2px solid #E54847;
+  font-weight: bold;
+  color: #E54847;
+}
+/* 左侧朝代选项栏未选中时的效果 */
+.normal{
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f2f2f2;
+  color: gray;
+}
+.detail-hover{
+  opacity: 0.9;
+  transform: scale(0.8,0.8); /*缩放*/
+  background: gray;
+}
+
+
+/* Right */
+.container .right {
+  flex: 5;
+}
+/* 诗词标题框的渐变样式 */
+.content_title{
+  margin-top: 40rpx;
+  background: linear-gradient(to right, #ead6ee, #a0f1ea); 
+}

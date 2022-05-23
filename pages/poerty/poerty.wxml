@@ -1,0 +1,78 @@
+<view class="container">
+  <!-- scroll-view标签在使用时，可以当做普通的view标签使用，可以设置很多属性改变XY轴滚动 -->
+  <!-- 左侧朝代选择： -->
+  <scroll-view scroll-y="true" style="height:calc(100vh)" class="left">
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap="houduanButton0">全部</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap="houduanButton1">先秦</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap="houduanButton2">两汉</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton3">魏晋</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton4">南北朝</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton5">隋代</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton6">唐代</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton7">五代</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton8">宋代</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton9">金朝</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton10">元代</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton11">明代</view> </view>
+    <view class="title_item " hover="true" hover-class="active"> <view bindtap=houduanButton12">清代</view> </view>
+  </scroll-view>
+
+  <!-- 右侧诗词部分:通过 tabs[x].isActive 即各项的isActive属性来判断渲染什么内容出现-->
+  <scroll-view scroll-y="true" style="height:calc(100vh)" class="right">
+    <!-- 搜索栏 -->
+    <SearchInput></SearchInput>
+
+    <!-- 各个朝代诗词标题列表 -->
+    <view wx:if="{{tabs[0].isActive}}">
+      0
+    </view>
+
+    <view wx:if="{{tabs[1].isActive}}">
+      <button style="width:70vw" class="content_title" wx:for= "{{message}}" bindtap="gotoContent" data-id="{{item.content}}" data-title="{{item.title}}" data-author="{{item.author}}">{{item.title}}</button>
+    </view>
+
+    <view wx:if="{{tabs[2].isActive}}">
+      2
+    </view>
+
+    <view wx:if="{{tabs[3].isActive}}">
+      3
+    </view>
+
+    <view wx:if="{{tabs[4].isActive}}">
+      4
+    </view>
+
+    <view wx:if="{{tabs[5].isActive}}">
+      5
+    </view>
+
+    <view wx:if="{{tabs[6].isActive}}">
+      6
+    </view>
+
+    <view wx:if="{{tabs[7].isActive}}">
+      7
+    </view>
+
+    <view wx:if="{{tabs[8].isActive}}">
+      8
+    </view>
+
+    <view wx:if="{{tabs[9].isActive}}">
+      9
+    </view>
+
+    <view wx:if="{{tabs[10].isActive}}">
+      10
+    </view>
+
+    <view wx:if="{{tabs[11].isActive}}">
+      11
+    </view>
+
+    <view wx:if="{{tabs[12].isActive}}">
+      12
+    </view>
+  </scroll-view>
+</view>

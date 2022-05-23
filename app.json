@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/poerty/poerty",
+    "pages/poerty_content/poerty_content",
+    "pages/index/index",
+    "pages/forum/forum",
+    "pages/game/game",
+    "pages/personal/personal",
+    "pages/search/search",
+
+    "pages/logs/logs"
+  ],
+  "window":{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#33CC33",
+    "navigationBarTitleText": "诗赋趁年华",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "推荐",
+      "iconPath": "icon/recommendedPage/bottomIcon.png",
+      "selectedIconPath":  "icon/recommendedPage/bottomIcon.png"
+    },
+    {
+      "pagePath": "pages/poerty/poerty",
+      "text": "诗词",
+      "iconPath": "icon/poetryPage/bottomIcon.png",
+      "selectedIconPath":  "icon/poetryPage/bottomIcon.png"
+    },
+    {
+      "pagePath": "pages/forum/forum",
+      "text": "论坛",
+      "iconPath": "icon/forumPage/bottomIcon.png",
+      "selectedIconPath":  "icon/forumPage/bottomIcon.png"
+    },
+    {
+      "pagePath": "pages/game/game",
+      "text": "游戏",
+      "iconPath": "icon/gamePage/bottomIcon.png",
+      "selectedIconPath":  "icon/gamePage/bottomIcon.png"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "icon/personalPage/bottomIcon.png",
+      "selectedIconPath":  "icon/personalPage/bottomIcon.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

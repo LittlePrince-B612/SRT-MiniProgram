@@ -1,0 +1,19 @@
+<view>
+  <!-- 搜索框 -->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="请输入您要搜索的作者或诗名" bindinput="getSearchContent"/>
+        </view>
+    </view>
+    <!-- 搜索按钮,调用搜索查询方法 -->
+    <view class="weui-search-bar__cancel-btn" bindtap='toSearch'>搜索</view>
+  </view>
+
+  <!-- 搜索结果 -->
+  <view>
+    <button style="width:70vw" class="content_title" wx:for= "{{message}}" bindtap="gotoContent" 
+    data-id="{{item.content}}" data-title="{{item.title}}" data-author="{{item.writer}}">{{item.title}}</button>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+.card {
+/*卡片的宽度*/  
+width: 90%;
+/*左外边距，这里代表距离最左边的距离*/
+ margin-left: 5%;
+/*卡片的高度。*/
+ height: 700rpx;
+/*背景色，可以自己更换*/
+ background: rgb(226, 208, 208);
+/* radius是卡片的边框的圆润c程度
+   shadow是阴影效果，四个值分别为水平阴影，垂直阴影，模糊距离，阴影的颜色。
+*/
+border-radius: 10rpx;
+box-shadow: 5px 5px 5px #cdcfcf;
+display: flex;    /*设置显示样式**/
+align-items: center;    /**子view垂直居中*/
+vertical-align: center; /**垂直居中*/
+justify-content: center; /**内容居中*/
+flex-direction:row; /* 子view排列方式row--水平 column--垂直 */
+}

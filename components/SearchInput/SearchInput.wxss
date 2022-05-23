@@ -1,0 +1,19 @@
+.search_input{
+  /* 设置字体大小及颜色 */
+  color:#9599A2;
+  font-size: 30rpx;
+  /* 设置边框是细边框. */
+  border-width: thin;
+  /* border-radius: 15rpx; */
+  /* 设置下边框为实线及颜色 */
+  border-bottom-style: solid;
+  border-bottom-color: #BBBBBB;
+  /* 设置边框的长宽及居中显示 */
+  width: 85%;
+  height: 80rpx;
+  margin:auto;
+  /* 设置内容悬浮居中 */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
